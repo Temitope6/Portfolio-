@@ -3,19 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Temitope | Web Developer</title>
+
+<title>BrightTech Agency</title>
 
 <style>
 
-body{
-font-family: Arial, sans-serif;
+*{
 margin:0;
-background:#0f172a;
-color:white;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
 }
 
 header{
-background:#020617;
+background:#0f172a;
+color:white;
 padding:20px;
 display:flex;
 justify-content:space-between;
@@ -23,7 +30,6 @@ align-items:center;
 }
 
 header h1{
-margin:0;
 color:#38bdf8;
 }
 
@@ -31,119 +37,150 @@ nav a{
 color:white;
 margin-left:20px;
 text-decoration:none;
-font-weight:bold;
 }
 
 .hero{
-text-align:center;
+background:#1e293b;
+color:white;
 padding:100px 20px;
+text-align:center;
 }
 
 .hero h2{
-font-size:40px;
+font-size:42px;
+margin-bottom:10px;
 }
 
-.hero span{
-color:#38bdf8;
+.hero p{
+margin-bottom:20px;
+}
+
+.btn{
+background:#38bdf8;
+padding:12px 25px;
+border:none;
+border-radius:5px;
+font-weight:bold;
+cursor:pointer;
 }
 
 .section{
 padding:60px 20px;
 max-width:1000px;
 margin:auto;
+text-align:center;
 }
 
-.projects{
+.services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
-}
-
-.card{
-background:#1e293b;
-padding:20px;
-border-radius:10px;
-}
-
-.card h3{
-margin-top:0;
-color:#38bdf8;
-}
-
-footer{
-text-align:center;
-padding:30px;
-background:#020617;
 margin-top:40px;
 }
 
-button{
-background:#38bdf8;
-border:none;
-padding:12px 20px;
-border-radius:5px;
-cursor:pointer;
-font-weight:bold;
+.card{
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#0f172a;
+}
+
+.about{
+background:white;
+}
+
+.contact{
+background:#e2e8f0;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <header>
-<h1>Temitope</h1>
+<h1>BrightTech</h1>
+
 <nav>
 <a href="#">Home</a>
+<a href="#services">Services</a>
 <a href="#about">About</a>
-<a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
 </nav>
+
 </header>
 
 <section class="hero">
-<h2>Hi, I'm <span>Temitope</span></h2>
-<p>Frontend Web Developer building responsive and modern websites.</p>
-<button>View My Work</button>
-</section>
 
-<section class="section" id="about">
-<h2>About Me</h2>
-<p>I am a passionate web developer skilled in HTML, CSS, and JavaScript. I enjoy building clean and responsive websites that provide great user experiences.</p>
-</section>
+<h2>We Build Modern Websites</h2>
 
-<section class="section" id="projects">
-<h2>Projects</h2>
+<p>Helping businesses grow with professional web design.</p>
 
-<div class="projects">
-
-<div class="card">
-<h3>Landing Page</h3>
-<p>A modern responsive landing page for businesses.</p>
-</div>
-
-<div class="card">
-<h3>Login Page</h3>
-<p>A stylish login and signup interface design.</p>
-</div>
-
-<div class="card">
-<h3>Business Website</h3>
-<p>A multi-section business website layout.</p>
-</div>
-
-</div>
+<button class="btn">Get Started</button>
 
 </section>
 
-<section class="section" id="contact">
-<h2>Contact</h2>
-<p>Email: www.davidtemitope017@gmail.com</p>
-<p>GitHub: github.com/Temitope6</p>
+<section class="section" id="services">
+
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Web Design</h3>
+<p>Modern responsive websites for businesses.</p>
+</div>
+
+<div class="card">
+<h3>Web Development</h3>
+<p>Fast and secure custom websites.</p>
+</div>
+
+<div class="card">
+<h3>SEO Optimization</h3>
+<p>Helping your website rank higher on Google.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section about" id="about">
+
+<h2>About Us</h2>
+
+<p>BrightTech is a digital agency that helps businesses build strong online presence with modern websites and technology solutions.</p>
+
+</section>
+
+<section class="section contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>Email: contact@brighttech.com</p>
+
+<p>Phone: +234 000 000 0000</p>
+
 </section>
 
 <footer>
-<p>© 2026 Temitope | Web Developer</p>
+
+<p>© 2026 BrightTech Agency</p>
+
 </footer>
 
 </body>
